@@ -6,6 +6,10 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel --dist-dir ./hot-reload-temp",
-    "build": "parcel build --dist-dir ./dist --no-source-maps --public-url ./"
+    "build": "parcel build --dist-dir ./dist --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
